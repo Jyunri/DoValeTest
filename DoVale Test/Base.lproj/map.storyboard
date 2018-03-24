@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m9I-2B-Usc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mapa-->
+        <scene sceneID="3fB-X1-oqg">
+            <objects>
+                <viewController id="m9I-2B-Usc" customClass="MapViewController" customModule="DoVale_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B9m-hy-6Ks"/>
+                        <viewControllerLayoutGuide type="bottom" id="xvy-DR-6Ms"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7hV-FL-x6b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hC0-r6-SPn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xvy-DR-6Ms" firstAttribute="top" secondItem="hC0-r6-SPn" secondAttribute="bottom" id="8ji-hu-wta"/>
+                            <constraint firstItem="hC0-r6-SPn" firstAttribute="top" secondItem="7hV-FL-x6b" secondAttribute="top" id="Ian-XE-WcC"/>
+                            <constraint firstItem="hC0-r6-SPn" firstAttribute="leading" secondItem="7hV-FL-x6b" secondAttribute="leading" id="a7p-x6-4vT"/>
+                            <constraint firstAttribute="trailing" secondItem="hC0-r6-SPn" secondAttribute="trailing" id="xME-SA-k8r"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="map_icon" id="O1h-da-6O3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="hC0-r6-SPn" id="VRt-sg-X47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8k-tS-b01" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="933.80281690140851"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map_icon" width="30" height="30"/>
+    </resources>
+</document>

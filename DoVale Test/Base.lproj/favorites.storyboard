@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zUq-K2-TvR">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favoritos-->
+        <scene sceneID="VcU-Jx-8Eb">
+            <objects>
+                <tableViewController title="Favoritos" id="zUq-K2-TvR" customClass="FavoritesTableViewController" customModule="DoVale_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="169" sectionHeaderHeight="28" sectionFooterHeight="28" id="P0y-O0-czx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="169" id="iMf-Yw-TxK" customClass="ServicesTableViewCell" customModule="DoVale_Test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="169"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iMf-Yw-TxK" id="PBH-cD-VQu">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-5J-wBR">
+                                            <rect key="frame" x="223" y="30" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="BgC-5J-wBR" secondAttribute="height" multiplier="89:108" constant="14.074074074074076" id="1lX-RD-COz"/>
+                                                <constraint firstAttribute="width" constant="80" id="qe7-H1-LR5"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HJb-dh-m0W">
+                                            <rect key="frame" x="16" y="28" width="173.5" height="61.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do Profissional" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogO-aV-qEV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="173.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaO-4T-7UZ">
+                                                    <rect key="frame" x="0.0" y="20.5" width="60.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prévia do Serviço" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XkR-wM-K9n">
+                                                    <rect key="frame" x="0.0" y="41" width="117.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="utL-xa-fJh" customClass="CosmosView" customModule="DoVale_Test" customModuleProvider="target">
+                                            <rect key="frame" x="218" y="124" width="90" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                                    <real key="value" value="-1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                    <integer key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                    <real key="value" value="3"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="(0)"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                                    <integer key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="textSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="HJb-dh-m0W" firstAttribute="top" secondItem="PBH-cD-VQu" secondAttribute="topMargin" constant="20" id="2zW-gW-R69"/>
+                                        <constraint firstItem="BgC-5J-wBR" firstAttribute="trailing" secondItem="PBH-cD-VQu" secondAttribute="trailingMargin" constant="-9" id="GSa-3a-iYR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BgC-5J-wBR" secondAttribute="bottom" constant="51" id="VyA-Dh-zjy"/>
+                                        <constraint firstItem="HJb-dh-m0W" firstAttribute="leading" secondItem="PBH-cD-VQu" secondAttribute="leadingMargin" constant="8" id="eoJ-AR-KOs"/>
+                                        <constraint firstItem="BgC-5J-wBR" firstAttribute="leading" secondItem="HJb-dh-m0W" secondAttribute="trailing" constant="33.5" id="iUn-uD-oLp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="servicePartnerAddress" destination="LaO-4T-7UZ" id="P5r-6l-Yuj"/>
+                                    <outlet property="servicePartnerName" destination="ogO-aV-qEV" id="1Z7-mX-qJD"/>
+                                    <outlet property="servicePartnerProfileImage" destination="BgC-5J-wBR" id="tNG-AT-Gnz"/>
+                                    <outlet property="servicePreview" destination="XkR-wM-K9n" id="KBj-wU-EVl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zUq-K2-TvR" id="Ign-5N-F8w"/>
+                            <outlet property="delegate" destination="zUq-K2-TvR" id="Bw9-1i-6gR"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <tabBarItem key="tabBarItem" title="Favoritos" selectedImage="fav_icon" id="WcW-fN-4YQ"/>
+                    <navigationItem key="navigationItem" id="rA3-S8-rla">
+                        <barButtonItem key="rightBarButtonItem" image="sort" id="Cbm-NU-yig">
+                            <inset key="imageInsets" minX="3" minY="6" maxX="0.0" maxY="5"/>
+                            <color key="tintColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="sortList" destination="zUq-K2-TvR" id="xc0-UR-PEV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k01-40-kOK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3438.75" y="665.49295774647885"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fav_icon" width="25" height="25"/>
+        <image name="sort" width="32" height="32"/>
+        <image name="top" width="283" height="361"/>
+    </resources>
+</document>
